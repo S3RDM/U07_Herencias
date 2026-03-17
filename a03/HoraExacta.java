@@ -35,20 +35,8 @@ public class HoraExacta extends Hora{
     }
     
     @Override
-<<<<<<< HEAD
     public boolean equals(Object otro){
         HoraExacta otraHora = (HoraExacta) otro;
         return (this.hora == otraHora.hora ? (this.minuto == otraHora.minuto ? (this.segundo == otraHora.segundo ? true : false) : false) : false);
-=======
-    public boolean equals(Object obj){
-        if(this == obj){
-            return true;
-        }
-        if(obj == null || getClass() != obj.getClass()){
-            return false;
-        }
-        HoraExacta otra = (HoraExacta) obj;
-        return this.segundo == otra.segundo && this.toString().equals(otra.toString());
->>>>>>> 726319ce03ae1e0a91c09bc8f2330a4965f2033b
     }
 }
